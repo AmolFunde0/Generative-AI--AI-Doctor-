@@ -29,7 +29,7 @@ A simple Streamlit-based AI doctor app that lets users enter age and select symp
 
 If you save a screenshot file in this folder, it will appear here.
 
-![AI Doctor screenshot](screenshot.png)
+![AI Doctor screenshot](OutPut.png)
 
 > Note: Replace `screenshot.png` with your actual screenshot file name if needed.
 
