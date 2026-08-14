@@ -1,3 +1,4 @@
+
 import streamlit as st
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
@@ -31,6 +32,7 @@ symptom_options = [
     "uerinary problems",
     "digestive issues",
 ]
+#
 selected_symptoms = st.multiselect("Select symptoms", symptom_options)
 other_symptoms = st.text_input("Other symptoms (optional)", placeholder="e.g., dizziness, rash")
 
