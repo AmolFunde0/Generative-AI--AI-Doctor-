@@ -1,4 +1,3 @@
-
 import streamlit as st
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
@@ -11,7 +10,6 @@ llm = ChatGroq(
 )
 st.title("AI Doctor🧑‍⚕️🩺")
 age = st.number_input("Enter your age", min_value=0, max_value=120, value=30)
-
 symptom_options = [
     "Fever",
     "Cough",
@@ -32,14 +30,12 @@ symptom_options = [
     "uerinary problems",
     "digestive issues",
 ]
-#
 selected_symptoms = st.multiselect("Select symptoms", symptom_options)
 other_symptoms = st.text_input("Other symptoms (optional)", placeholder="e.g., dizziness, rash")
-
 symptoms = selected_symptoms.copy()
 if other_symptoms:
     symptoms.append(other_symptoms)
-
+    
 st.write("Age:", age)
 st.write("Symptoms:", ", ".join(symptoms) if symptoms else "None")
 if st.button("Submit"):
